@@ -1,3 +1,5 @@
+
+
 /**
  * Created by filipebraida on 31/05/16.
  */
@@ -26,6 +28,9 @@ public class Character {
 
     public int getAttack() {
         return this.attack;
+    }
+    public void setLife(int life){
+    	this.life = life;
     }
 
     private int life;

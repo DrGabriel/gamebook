@@ -1,3 +1,5 @@
+
+
 /**
  * Created by filipebraida on 31/05/16.
  */
@@ -8,7 +10,7 @@ public abstract class Choice {
     }
 
     public String getDescription() {
-        return number + ": "+ this.description;
+        return this.description;
     }
 
     public void defineNumber(int number) {

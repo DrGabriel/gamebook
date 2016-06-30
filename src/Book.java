@@ -45,7 +45,7 @@ public class Book {
                 this.eventActually.applyHistory(player);
             }
             else {
-                Event gameOver = new BlankEvent("Game Over", new ArrayList<Choice>());
+                Event gameOver = new BlankEvent("Você morreu.\n" + "Game Over.", new ArrayList<Choice>());
                 this.eventActually = gameOver;
             }
 
@@ -61,6 +61,10 @@ public class Book {
 
     public Collection<Choice> nextEvents() {
         return this.eventActually.nextEvents();
+    }
+    
+    public void revive(){
+    	this.player.setLife(10);
     }
 
     private Event eventActually;
